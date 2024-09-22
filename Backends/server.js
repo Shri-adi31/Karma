@@ -21,7 +21,7 @@ connectDB();
 // Middleware
 app.use(helmet()); // Secure HTTP headers
 app.use(cors({
-  origin: ['https://your-frontends-domain.com', 'http://localhost:3000'] // Update with your frontend URL
+  origin: ['https://your-frontend-domain.com', 'http://localhost:3000'] // Update with your frontend URL
 }));
 app.use(express.json()); // Parse JSON request bodies
 
