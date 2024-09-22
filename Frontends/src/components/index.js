@@ -1,0 +1,12 @@
+export { default as Build } from './Build';
+export { default as About } from './About';
+export { default as Skills } from './Skills';
+export { default as SkillMatrix } from './SkillMatrix';
+export {default as ProjectCard } from './ProjectCard';
+export { default as Projects } from './Projects';
+export { default as Achievements } from './Achievements';
+export { default as Communication } from './Communication';
+export { default as ContactForm } from './ContactForm';
+export { default as NavBar } from './NavBar';
+export { default as Footer } from './Footer';
+export { default as ResumeDownload } from './ResumeDownload';
