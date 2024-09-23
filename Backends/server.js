@@ -21,9 +21,12 @@ connectDB();
 // Middleware
 app.use(helmet()); // Secure HTTP headers
 app.use(cors({
-  origin: [`${process.env.REACT_APP_FRONTEND_URL}`, 'http://localhost:3000'] // Update with your frontend URL
+  origin: [process.env.FRONTEND_URL, 'http://localhost:3000'], // Update with your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true // If you need to send cookies or authentication headers
 }));
-app.use(express.json()); // Parse JSON request bodies
+app.use(express.json()); // Parse JSON request bodie
 
 // Routes
 app.use('/api', contactRoutes); // Use contact routes under /api
