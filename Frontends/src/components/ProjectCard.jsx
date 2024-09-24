@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardActionArea, CardMedia, Typography, Button, SvgIcon, Box } from '@mui/material';
 import { GithubIcon } from '../Utils/Svg';
 
-const ProjectCard = ({ img, alt, title, description,icon,viewbox }) => {
+const ProjectCard = ({ img, alt, title, description,icon,viewbox,GitLink,yourLink}) => {
   return (
     <Card sx={{ maxWidth: 1000, position: 'relative' }}>
       <CardActionArea>
@@ -39,10 +39,10 @@ const ProjectCard = ({ img, alt, title, description,icon,viewbox }) => {
         </Box>
       </CardActionArea>
       <CardActionArea>
-        <Button>
+        <Button component="a" href={GitLink} target="_blank" rel="noopener noreferrer">
           <SvgIcon component={GithubIcon} viewBox="0 0 50 50" sx={{ fontSize: 40 }} />
         </Button>
-        <Button>
+        <Button component="a" href={yourLink} target="_blank" rel="noopener noreferrer">
             <SvgIcon component={icon} viewBox={viewbox} sx={{ fontSize: 40 }} />
         </Button>
       </CardActionArea>

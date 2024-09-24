@@ -11,7 +11,9 @@ const projects = [
     title: 'YouTube Clone',
     description: 'A YouTube clone built using React, MUI, and the RapidAPI (YouTube) API.',
     icon: YouTubeIcon,
-    viewbox: '0 0 48 48'
+    viewbox: '0 0 48 48',
+    Gitlink: 'https://github.com/Shri-adi31/Youtube-Clone',
+    yourlink:'https://vibehype.netlify.app'
   },
   {
     img: require('../Utils/Assets/Sprectrogram.jpg'),
@@ -74,6 +76,8 @@ const Projects = () => {
               description={project.description}
               icon={project.icon}
               viewbox={project.viewbox}
+              GitLink={project.Gitlink}
+              yourLink={project.yourlink}
             />
           </Grid>
         ))}
