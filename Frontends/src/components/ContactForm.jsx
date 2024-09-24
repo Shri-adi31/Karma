@@ -51,7 +51,7 @@ const ContactForm = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        // Replace 'http://localhost:5000/api/contact' with your backend URL if different
+        
         const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, formData);
         if (response.status === 201) {
           setSuccessMessage("Your message has been sent successfully!");
