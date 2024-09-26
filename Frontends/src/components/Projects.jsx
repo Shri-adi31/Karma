@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography } from '@mui/material';
 import Theme from '../Theme';
 import ProjectCard from './ProjectCard';
-import { SoundCloudIcon, YouTubeIcon } from '../Utils/Svg';
+import { YouTubeIcon } from '../Utils/Svg';
 
 const projects = [
   {
