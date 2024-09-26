@@ -19,9 +19,17 @@ const projects = [
     img: require('../Utils/Assets/Sprectrogram.jpg'),
     alt: 'Spectrogram Image',
     title: 'Music Genre Prediction',
-    description: 'Music Genre Prediction using Mel-Spectrogram and GTzan dataset.',
-    icon: SoundCloudIcon,
-    viewbox: '0 0 100 100'
+    description: 'Music Genre Prediction using Mel-Spectrogram and GTzan dataset.', 
+    viewbox: '0 0 100 100',
+    Gitlink: 'https://colab.research.google.com/drive/1cnbWXoC9qLB8HuvypEyIiEL25Xy04cHd',
+  },
+  {
+    img: require('../Utils/Assets/Sotifyeda.png'),
+    alt: 'Spotify EDA image',
+    title: 'Spotify Dashboard',
+    description: 'Spotify PowerBI Dashboard.',
+    viewbox: '0 0 100 100',
+    Gitlink: 'https://colab.research.google.com/drive/1cnbWXoC9qLB8HuvypEyIiEL25Xy04cHd',
   }
 ];
 
