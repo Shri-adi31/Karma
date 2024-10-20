@@ -34,10 +34,10 @@ const Footer = () => {
                   }}
                 >
                   <a
-                    href="mailto:shrimanaditya2.nayak@gmail.com"
+                    href="mailto:shrisan636@gmail.com"
                     style={{ color: 'inherit', textDecoration: 'none' }}
                   >
-                    shrimanaditya2.nayak@gmail.com
+                    shrisan636@gmail.com
                   </a>
                 </Typography>
               </Box>

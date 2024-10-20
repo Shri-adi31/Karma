@@ -32,3 +32,4 @@ export { ReactComponent as TensorFlowIcon } from './images/tensorflow-2.svg';
 export { ReactComponent as VSCodeIcon } from './images/vs-code-svgrepo-com.svg';
 export { ReactComponent as YouTubeIcon } from './images/youtube-svgrepo-com.svg';
 export { ReactComponent as SoundCloudIcon } from './images/soundcloud-logo-svgrepo-com.svg';
+export { ReactComponent as LinkIcon } from './images/link-svgrepo-com.svg';

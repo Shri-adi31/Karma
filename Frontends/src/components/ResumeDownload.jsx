@@ -7,34 +7,23 @@ import Theme from '../Theme'; // Adjust based on your theme setup
 import resume from '../Utils/resume.pdf'; 
 
 const ResumeDownload = () => {
-  const handleDownload = () => {
-    // Create a link element
-    const link = document.createElement('a');
-    link.href = resume;
-
-    // Set the desired file name
-    link.download = 'resume.pdf';
-
-    // Append to the document and trigger click
-    document.body.appendChild(link);
-    link.click();
-
-    // Clean up
-    link.parentNode.removeChild(link);
+  const handleView = () => {
+    // Open the PDF in a new browser tab
+    window.open(resume, '_blank', 'noopener,noreferrer');
   };
 
   return (
     <Button
       variant="contained"
       startIcon={<DownloadIcon />}
-      onClick={handleDownload}
+      onClick={handleView}
       sx={{
         fontFamily: Theme.fonts.secondaryFont,
         paddingY: 1,
         fontSize: { xs: '1rem', sm: '1.1rem' },
       }}
     >
-      Download Resume
+      View Resume
     </Button>
   );
 };

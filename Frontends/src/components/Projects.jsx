@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography } from '@mui/material';
 import Theme from '../Theme';
 import ProjectCard from './ProjectCard';
-import { YouTubeIcon } from '../Utils/Svg';
+import { YouTubeIcon,LinkIcon } from '../Utils/Svg';
 
 const projects = [
   {
@@ -29,7 +29,17 @@ const projects = [
     title: 'Spotify Dashboard',
     description: 'Spotify PowerBI Dashboard.',
     viewbox: '0 0 100 100',
-    Gitlink: 'https://colab.research.google.com/drive/1cnbWXoC9qLB8HuvypEyIiEL25Xy04cHd',
+    Gitlink: 'https://github.com/Shri-adi31/Spotify-PowerBI-EDA.git',
+  },
+  {
+    img: require('../Utils/Assets/nifty50.png'),
+    alt: 'nifty50 ETF Dashboard image',
+    title: 'Nifty50 ETF forecasting',
+    description: 'Nifty50 ETF forecasting using LSTM and Dashboard.',
+    icon: LinkIcon,
+    viewbox: '0 0 100 100',
+    Gitlink: 'https://github.com/Shri-adi31/Nifty50-Forecasting-using-LSTM.git',
+    yourlink: 'https://nifty50etf.netlify.app/'
   }
 ];
 

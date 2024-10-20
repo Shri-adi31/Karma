@@ -7,11 +7,12 @@ import {
   useMediaQuery,
   IconButton,
   Menu,
-  MenuItem,
+  MenuItem
 } from '@mui/material';
 import { Link } from 'react-scroll';
 import Theme from '../Theme';
 import MenuIcon from '@mui/icons-material/Menu';
+import Signature from '../Utils/Assets/Signature.png';
 
 const NavBar = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -46,7 +47,16 @@ const NavBar = () => {
         <Box sx={{ flexGrow: 1 }}>
           <Button color="inherit" sx={{ fontSize: { xs: '1rem', md: '1.2rem' } }}>
             <Link to="build" smooth={true} duration={500} offset={-58}>
-              Portfolio
+            <Box
+                component="img"
+                src={Signature} // Your APNG file
+                alt="Shriman Aditya Signature"
+                sx={{
+                  width: 120, // Adjust the size as needed
+                  height: 'auto', // Maintain aspect ratio
+                  display: 'block',
+                }}
+              />
             </Link>
           </Button>
         </Box>
